@@ -1,5 +1,30 @@
 [
   {
+    "id": "ed-muile7hp",
+    "volume": "hey",
+    "title": "hey",
+    "date": "SEPTEMBER 26, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "hey",
+    "articles": [
+      {
+        "id": "art-ed-muile7hp",
+        "category": "ISSUE",
+        "title": "hey",
+        "author": "By Editorial Staff",
+        "date": "SEPTEMBER 26, 2026",
+        "image": "",
+        "excerpt": "hey",
+        "content": "<p>hey</p>"
+      }
+    ],
+    "image": "covers/muile7i1-cover.jpg"
+  },
+  {
     "id": "ed-muil9seb",
     "volume": "os",
     "title": "ok",
@@ -12,7 +37,7 @@
     "subtitle": "tr",
     "articles": [
       {
-        "id": "art-ed-muil9seb",
+        "id": "art-0",
         "category": "ISSUE",
         "title": "ok",
         "author": "By Editorial Staff",
