@@ -1,5 +1,30 @@
 [
   {
+    "id": "ed-muil9seb",
+    "volume": "os",
+    "title": "ok",
+    "date": "SEPTEMBER 26, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "tr",
+    "articles": [
+      {
+        "id": "art-ed-muil9seb",
+        "category": "ISSUE",
+        "title": "ok",
+        "author": "By Editorial Staff",
+        "date": "SEPTEMBER 26, 2026",
+        "image": "",
+        "excerpt": "tr",
+        "content": "<p>tr</p>"
+      }
+    ],
+    "image": "covers/muil9sec-cover.jpg"
+  },
+  {
     "id": "ed-mui22plr",
     "volume": "Issue 1",
     "title": "September Week 4",
