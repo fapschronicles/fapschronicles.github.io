@@ -1,38 +1,5 @@
 [
   {
-    "id": "ed-mukt8eef",
-    "volume": "VOL. LIX",
-    "title": "TEST",
-    "date": "SEPTEMBER 28, 2026",
-    "category": "polls",
-    "categoryLabel": "CAMPUS POLL",
-    "status": "published",
-    "readTime": "1 min vote",
-    "featured": false,
-    "subtitle": "",
-    "type": "poll",
-    "question": "Test Poll",
-    "options": [
-      {
-        "id": "opt-1",
-        "text": "Option 1",
-        "votes": 0
-      },
-      {
-        "id": "opt-2",
-        "text": "Option 2",
-        "votes": 0
-      },
-      {
-        "id": "opt-3",
-        "text": "Option 3",
-        "votes": 0
-      }
-    ],
-    "articles": [],
-    "image": ""
-  },
-  {
     "id": "ed-mui22plr",
     "volume": "Issue 1",
     "title": "September Week 4",
