@@ -1,29 +1,35 @@
 [
   {
-    "id": "ed-muld68vf",
-    "volume": "28th September 2026",
-    "title": "Sep Week 4",
+    "id": "ed-mulez7fu",
+    "volume": "VOL. LIX",
+    "title": "Vote for the Student's Voice topic in the next edition of The FAPS Chronicles",
     "date": "SEPTEMBER 28, 2026",
-    "category": "issues",
-    "categoryLabel": "ISSUE",
+    "category": "polls",
+    "categoryLabel": "CAMPUS POLL",
     "status": "published",
-    "readTime": "3 min read",
+    "readTime": "1 min vote",
     "featured": false,
-    "subtitle": "The latest edition of The FAPS Chronicles delivers comprehensive coverage of our solemn Founder’s Day assembly alongside preparations for the inaugural Quad-FAPS athletic meet. We celebrate our milestone Under-16 triumph in the Cottonian Shield, ending a thirteen-year drought, while tracking global sports from Asian Games cricket gold to upcoming international football friendlies. Tech-minded scholars can dive into OpenAI’s new Socratic “Study Mode” alongside groundbreaking astrophysics discoveries tracing radio signals from distant exoplanets. For practical life skills, we break down essential financial literacy modules from Zerodha Varsity tailored specifically for teens. Our candid Students’ Voice feature sparks genuine debate, exploring honest, unfiltered perspectives on the students opinion of the school canteens. Readers will also find post-exam reflections, lighthearted comics, stories from students, detective brainteasers, and a discreet riddle slipped into the back pages. Read the complete publication, track campus event reports, and explore student editorial features online.",
-    "articles": [
+    "subtitle": "",
+    "type": "poll",
+    "question": "Vote for the  Student's Voice topic of the next Issue of The FAPS Chronicles",
+    "options": [
       {
-        "id": "art-ed-muld68vf",
-        "category": "ISSUE",
-        "title": "Sep Week 4",
-        "author": "By Editorial Staff",
-        "date": "SEPTEMBER 28, 2026",
-        "image": "",
-        "excerpt": "The latest edition of The FAPS Chronicles delivers comprehensive coverage of our solemn Founder’s Day assembly alongside preparations for the inaugural Quad-FAPS athletic meet. We celebrate our milestone Under-16 triumph in the Cottonian Shield, ending a thirteen-year drought, while tracking global sports from Asian Games cricket gold to upcoming international football friendlies. Tech-minded scholars can dive into OpenAI’s new Socratic “Study Mode” alongside groundbreaking astrophysics discoveries tracing radio signals from distant exoplanets. For practical life skills, we break down essential financial literacy modules from Zerodha Varsity tailored specifically for teens. Our candid Students’ Voice feature sparks genuine debate, exploring honest, unfiltered perspectives on the students opinion of the school canteens. Readers will also find post-exam reflections, lighthearted comics, stories from students, detective brainteasers, and a discreet riddle slipped into the back pages. Read the complete publication, track campus event reports, and explore student editorial features online.",
-        "content": "<p>The latest edition of The FAPS Chronicles delivers comprehensive coverage of our solemn Founder’s Day assembly alongside preparations for the inaugural Quad-FAPS athletic meet. We celebrate our milestone Under-16 triumph in the Cottonian Shield, ending a thirteen-year drought, while tracking global sports from Asian Games cricket gold to upcoming international football friendlies. Tech-minded scholars can dive into OpenAI’s new Socratic “Study Mode” alongside groundbreaking astrophysics discoveries tracing radio signals from distant exoplanets. For practical life skills, we break down essential financial literacy modules from Zerodha Varsity tailored specifically for teens. Our candid Students’ Voice feature sparks genuine debate, exploring honest, unfiltered perspectives on the students opinion of the school canteens. Readers will also find post-exam reflections, lighthearted comics, stories from students, detective brainteasers, and a discreet riddle slipped into the back pages. Read the complete publication, track campus event reports, and explore student editorial features online.</p>"
+        "id": "opt-1",
+        "text": "Should the school include Science, Sports, and AI clubs along with the existing clubs?",
+        "votes": 0
+      },
+      {
+        "id": "opt-2",
+        "text": "Should indoor sports like chess get equal weightage with outdoor sports like football?",
+        "votes": 0
+      },
+      {
+        "id": "opt-3",
+        "text": "Should arts and cultural fests get the exact same funding, spotlight, and hype as the annual sports day?",
+        "votes": 0
       }
     ],
-    "pdfUrl": "pdfs/muld68vh-FAPS_CHRONICLES_-_I.pdf",
-    "pdfFilename": "FAPS_CHRONICLES_-_I.pdf",
-    "image": "covers/muld6ffw-cover.jpg"
+    "articles": [],
+    "image": "covers/mulez7ga-cover.png"
   }
 ]
