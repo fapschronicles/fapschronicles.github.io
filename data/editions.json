@@ -1,5 +1,32 @@
 [
   {
+    "id": "ed-mulfb56o",
+    "volume": "Issue 1",
+    "title": "September Week 4",
+    "date": "SEPTEMBER 28, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "This edition of The FAPS Chronicles delivers comprehensive coverage of our solemn Founder’s Day assembly alongside preparations for the inaugural Quad-FAPS athletic meet. We celebrate our milestone Under-16 triumph in the Cottonian Shield, ending a thirteen-year drought, while tracking global sports from Asian Games cricket gold to upcoming international football friendlies. Tech-minded scholars can dive into OpenAI’s new Socratic “Study Mode” alongside groundbreaking astrophysics discoveries tracing radio signals from distant exoplanets. For practical life skills, we break down essential financial literacy modules from Zerodha Varsity tailored specifically for teens. Our candid Students’ Voice feature sparks genuine debate, exploring honest, unfiltered perspectives on prefect accountability and campus governance. Readers will also find post-exam reflections, lighthearted comics, detective brainteasers, and a discreet riddle slipped into the back pages. Read the complete publication, track campus event reports, and explore student editorial features online.",
+    "articles": [
+      {
+        "id": "art-ed-mulfb56o",
+        "category": "ISSUE",
+        "title": "September Week 4",
+        "author": "By Editorial Staff",
+        "date": "SEPTEMBER 28, 2026",
+        "image": "",
+        "excerpt": "This edition of The FAPS Chronicles delivers comprehensive coverage of our solemn Founder’s Day assembly alongside preparations for the inaugural Quad-FAPS athletic meet. We celebrate our milestone Under-16 triumph in the Cottonian Shield, ending a thirteen-year drought, while tracking global sports from Asian Games cricket gold to upcoming international football friendlies. Tech-minded scholars can dive into OpenAI’s new Socratic “Study Mode” alongside groundbreaking astrophysics discoveries tracing radio signals from distant exoplanets. For practical life skills, we break down essential financial literacy modules from Zerodha Varsity tailored specifically for teens. Our candid Students’ Voice feature sparks genuine debate, exploring honest, unfiltered perspectives on prefect accountability and campus governance. Readers will also find post-exam reflections, lighthearted comics, detective brainteasers, and a discreet riddle slipped into the back pages. Read the complete publication, track campus event reports, and explore student editorial features online.",
+        "content": "<p>This edition of The FAPS Chronicles delivers comprehensive coverage of our solemn Founder’s Day assembly alongside preparations for the inaugural Quad-FAPS athletic meet. We celebrate our milestone Under-16 triumph in the Cottonian Shield, ending a thirteen-year drought, while tracking global sports from Asian Games cricket gold to upcoming international football friendlies. Tech-minded scholars can dive into OpenAI’s new Socratic “Study Mode” alongside groundbreaking astrophysics discoveries tracing radio signals from distant exoplanets. For practical life skills, we break down essential financial literacy modules from Zerodha Varsity tailored specifically for teens. Our candid Students’ Voice feature sparks genuine debate, exploring honest, unfiltered perspectives on prefect accountability and campus governance. Readers will also find post-exam reflections, lighthearted comics, detective brainteasers, and a discreet riddle slipped into the back pages. Read the complete publication, track campus event reports, and explore student editorial features online.</p>"
+      }
+    ],
+    "pdfUrl": "pdfs/mulfb56q-FAPS_CHRONICLES_-_I.pdf",
+    "pdfFilename": "FAPS_CHRONICLES_-_I.pdf",
+    "image": "covers/mulfbcdd-cover.jpg"
+  },
+  {
     "id": "ed-mulez7fu",
     "volume": "VOL. LIX",
     "title": "Vote for the Student's Voice topic in the next edition of The FAPS Chronicles",
@@ -30,6 +57,7 @@
       }
     ],
     "articles": [],
-    "image": "covers/mulez7ga-cover.png"
+    "image": "covers/mulez7ga-cover.png",
+    "closed": false
   }
 ]
