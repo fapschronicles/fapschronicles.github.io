@@ -12,7 +12,7 @@
     "subtitle": "This edition of The FAPS Chronicles delivers comprehensive coverage of our solemn Founder’s Day assembly alongside preparations for the inaugural Quad-FAPS athletic meet. We celebrate our milestone Under-16 triumph in the Cottonian Shield, ending a thirteen-year drought, while tracking global sports from Asian Games cricket gold to upcoming international football friendlies. Tech-minded scholars can dive into OpenAI’s new Socratic “Study Mode” alongside groundbreaking astrophysics discoveries tracing radio signals from distant exoplanets. For practical life skills, we break down essential financial literacy modules from Zerodha Varsity tailored specifically for teens. Our candid Students’ Voice feature sparks genuine debate, exploring honest, unfiltered perspectives on prefect accountability and campus governance. Readers will also find post-exam reflections, lighthearted comics, detective brainteasers, and a discreet riddle slipped into the back pages. Read the complete publication, track campus event reports, and explore student editorial features online.",
     "articles": [
       {
-        "id": "art-ed-mulfb56o",
+        "id": "art-0",
         "category": "ISSUE",
         "title": "September Week 4",
         "author": "By Editorial Staff",
@@ -24,7 +24,8 @@
     ],
     "pdfUrl": "pdfs/mulfb56q-FAPS_CHRONICLES_-_I.pdf",
     "pdfFilename": "FAPS_CHRONICLES_-_I.pdf",
-    "image": "covers/mulfbcdd-cover.jpg"
+    "image": "covers/mulfbcdd-cover.jpg",
+    "closed": false
   },
   {
     "id": "ed-mulez7fu",
@@ -58,6 +59,6 @@
     ],
     "articles": [],
     "image": "covers/mulez7ga-cover.png",
-    "closed": false
+    "closed": true
   }
 ]
