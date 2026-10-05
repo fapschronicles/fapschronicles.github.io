@@ -9,22 +9,23 @@
     "status": "published",
     "readTime": "3 min read",
     "featured": false,
-    "subtitle": "",
+    "subtitle": "Welcome to the latest edition of The FAPS Chronicles! From track preparations for the upcoming Quad-FAPS meet and local sports triumphs to intense debates on student clubs, tech headlines, and weekly riddles—catch all the latest campus stories and beyond for the first week of October.",
     "articles": [
       {
-        "id": "art-ed-muuqoanb",
+        "id": "art-0",
         "category": "ISSUE",
         "title": "October Week 1",
         "author": "By Editorial Staff",
         "date": "OCTOBER 5, 2026",
         "image": "",
-        "excerpt": "",
+        "excerpt": "Welcome to the latest edition of The FAPS Chronicles! From track preparations for the upcoming Quad-FAPS meet and local sports triumphs to intense debates on student clubs, tech headlines, and weekly riddles—catch all the latest campus stories and beyond for the first week of October.",
         "content": "<p></p>"
       }
     ],
     "pdfUrl": "pdfs/muuqoane-FAPS_CHRONICLES_-_II.pdf",
     "pdfFilename": "FAPS_CHRONICLES_-_II.pdf",
-    "image": "covers/muuqom0j-cover.jpg"
+    "image": "covers/muuqom0j-cover.jpg",
+    "closed": false
   },
   {
     "id": "ed-mulfb56o",
