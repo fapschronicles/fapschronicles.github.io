@@ -1,5 +1,32 @@
 [
   {
+    "id": "ed-muuqoanb",
+    "volume": "October 5, 2026",
+    "title": "October Week 1",
+    "date": "OCTOBER 5, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "",
+    "articles": [
+      {
+        "id": "art-ed-muuqoanb",
+        "category": "ISSUE",
+        "title": "October Week 1",
+        "author": "By Editorial Staff",
+        "date": "OCTOBER 5, 2026",
+        "image": "",
+        "excerpt": "",
+        "content": "<p></p>"
+      }
+    ],
+    "pdfUrl": "pdfs/muuqoane-FAPS_CHRONICLES_-_II.pdf",
+    "pdfFilename": "FAPS_CHRONICLES_-_II.pdf",
+    "image": "covers/muuqom0j-cover.jpg"
+  },
+  {
     "id": "ed-mulfb56o",
     "volume": "Issue 1",
     "title": "September Week 4",
