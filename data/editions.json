@@ -1,5 +1,38 @@
 [
   {
+    "id": "ed-mv13251y",
+    "volume": "October 7th 2026",
+    "title": "October Week 2",
+    "date": "OCTOBER 9, 2026",
+    "category": "polls",
+    "categoryLabel": "CAMPUS POLL",
+    "status": "published",
+    "readTime": "1 min vote",
+    "featured": false,
+    "subtitle": "Represent yourself by voting for the next Student's Voice topic of the FAPS Chronicles!",
+    "type": "poll",
+    "question": "Vote for the Next Student's Voice Topic of  The FAPS Chronicles!",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Should students be given hands on experience of doing charity and basic house hold chores as character development during SUPW periods?",
+        "votes": 0
+      },
+      {
+        "id": "opt-2",
+        "text": "Should indoor sports like chess get equal weightage with outdoor sports like football?",
+        "votes": 0
+      },
+      {
+        "id": "opt-3",
+        "text": "Should arts and cultural fests get the exact same funding, spotlight, and hype as the annual sports day?",
+        "votes": 0
+      }
+    ],
+    "articles": [],
+    "image": ""
+  },
+  {
     "id": "ed-muuqoanb",
     "volume": "October 5, 2026",
     "title": "October Week 1",
