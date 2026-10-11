@@ -2,7 +2,7 @@
   {
     "id": "ed-mv13251y",
     "volume": "October 7th 2026",
-    "title": "October Week 2",
+    "title": "Vote for the Next Student's Voice Topic of  The FAPS Chronicles!",
     "date": "OCTOBER 9, 2026",
     "category": "polls",
     "categoryLabel": "CAMPUS POLL",
@@ -30,7 +30,10 @@
       }
     ],
     "articles": [],
-    "image": ""
+    "image": "covers/mulez7ga-cover.png",
+    "closed": false,
+    "pdfUrl": null,
+    "pdfFilename": null
   },
   {
     "id": "ed-muuqoanb",
