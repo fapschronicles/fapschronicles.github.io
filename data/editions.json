@@ -1,5 +1,32 @@
 [
   {
+    "id": "ed-mv42w2zz",
+    "volume": "October 11, 2026",
+    "title": "October Week 2",
+    "date": "OCTOBER 11, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "Catch the latest news covering the Quad-FAPS meet, where students express their feelings! Enjoy riddles, quotes, and more!",
+    "articles": [
+      {
+        "id": "art-ed-mv42w2zz",
+        "category": "ISSUE",
+        "title": "October Week 2",
+        "author": "By Editorial Staff",
+        "date": "OCTOBER 11, 2026",
+        "image": "",
+        "excerpt": "Catch the latest news covering the Quad-FAPS meet, where students express their feelings! Enjoy riddles, quotes, and more!",
+        "content": "<p>Catch the latest news covering the Quad-FAPS meet, where students express their feelings! Enjoy riddles, quotes, and more!</p>"
+      }
+    ],
+    "pdfUrl": "pdfs/mv42w301-FAPS_CHRONICLES_-_III.pdf",
+    "pdfFilename": "FAPS_CHRONICLES_-_III.pdf",
+    "image": "covers/mv42wcn5-cover.jpg"
+  },
+  {
     "id": "ed-mv13251y",
     "volume": "October 7th 2026",
     "title": "Vote for the Next Student's Voice Topic of  The FAPS Chronicles!",
