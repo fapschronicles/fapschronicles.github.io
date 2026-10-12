@@ -12,7 +12,7 @@
     "subtitle": "Catch the latest news covering the Quad-FAPS meet, where students express their feelings! Enjoy riddles, quotes, and more!",
     "articles": [
       {
-        "id": "art-ed-mv42w2zz",
+        "id": "art-0",
         "category": "ISSUE",
         "title": "October Week 2",
         "author": "By Editorial Staff",
@@ -24,7 +24,8 @@
     ],
     "pdfUrl": "pdfs/mv42w301-FAPS_CHRONICLES_-_III.pdf",
     "pdfFilename": "FAPS_CHRONICLES_-_III.pdf",
-    "image": "covers/mv42wcn5-cover.jpg"
+    "image": "covers/mv42wcn5-cover.jpg",
+    "closed": false
   },
   {
     "id": "ed-mv13251y",
@@ -150,6 +151,6 @@
     ],
     "articles": [],
     "image": "covers/mulez7ga-cover.png",
-    "closed": true
+    "closed": false
   }
 ]
