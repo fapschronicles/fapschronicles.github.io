@@ -32,11 +32,12 @@
     "articles": [],
     "image": "covers/mulez7ga-cover.png",
     "pdfUrl": null,
-    "pdfFilename": null
+    "pdfFilename": null,
+    "closed": false
   },
   {
     "id": "ed-mvdqu3f3",
-    "volume": "October 19, 2026",
+    "volume": "October 19, 2026  - deleted",
     "title": "October Week 3",
     "date": "OCTOBER 18, 2026",
     "category": "issues",
@@ -184,8 +185,8 @@
   },
   {
     "id": "ed-mulez7fu",
-    "volume": "September 28th, 2026",
-    "title": "Sep W4",
+    "volume": "VOL. LIX",
+    "title": "Vote for the Student's Voice topic in the next edition of The FAPS Chronicles",
     "date": "SEPTEMBER 28, 2026",
     "category": "polls",
     "categoryLabel": "CAMPUS POLL",
@@ -214,8 +215,6 @@
     ],
     "articles": [],
     "image": "covers/mulez7ga-cover.png",
-    "closed": true,
-    "pdfUrl": null,
-    "pdfFilename": null
+    "closed": true
   }
 ]
