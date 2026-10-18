@@ -1,5 +1,38 @@
 [
   {
+    "id": "ed-mvdrsu4f",
+    "volume": "October 19th, 2026",
+    "title": "Poll - Oct W3",
+    "date": "OCTOBER 18, 2026",
+    "category": "polls",
+    "categoryLabel": "CAMPUS POLL",
+    "status": "published",
+    "readTime": "1 min vote",
+    "featured": false,
+    "subtitle": "",
+    "type": "poll",
+    "question": "What should the next Student's Voice topic be?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Is cricket the reason for failure of football in India?",
+        "votes": 0
+      },
+      {
+        "id": "opt-2",
+        "text": "Biggest success of the year: TECHNOLOGY or ENTERTAINMENT?",
+        "votes": 0
+      },
+      {
+        "id": "opt-3",
+        "text": "Should the school library, the very heart of FAPS, be re-transformed?",
+        "votes": 0
+      }
+    ],
+    "articles": [],
+    "image": "covers/mulez7ga-cover.png"
+  },
+  {
     "id": "ed-mvdqu3f3",
     "volume": "October 19, 2026",
     "title": "October Week 3",
