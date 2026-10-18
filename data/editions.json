@@ -1,5 +1,32 @@
 [
   {
+    "id": "ed-mvds2jt7",
+    "volume": "October 19, 2026",
+    "title": "October Week 3",
+    "date": "OCTOBER 18, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "The lead article of this issue of The FAPS Chronicles (October Week 3, 2026), titled \"Preparations All the Way,\" highlights the campus-wide excitement and dedicated efforts underway for the upcoming school production of The Girl with the Golden Hair. Showcasing unity across the school community, student captains, prefects, teachers, and the choir are investing long hours into rehearsals alongside a versatile dance ensemble combining styles from Bharatnatyam and Bhangra to Hip Hop and Ballet. Backed by teacher vocalists, tech crew coordination, and special music curated by Vice Principal Mr. Craig William Temple, the ambitious production serves as a centerpiece celebrating school pride, cross-grade camaraderie, and artistic collaboration.",
+    "articles": [
+      {
+        "id": "art-ed-mvds2jt7",
+        "category": "ISSUE",
+        "title": "October Week 3",
+        "author": "By Editorial Staff",
+        "date": "OCTOBER 18, 2026",
+        "image": "",
+        "excerpt": "The lead article of this issue of The FAPS Chronicles (October Week 3, 2026), titled \"Preparations All the Way,\" highlights the campus-wide excitement and dedicated efforts underway for the upcoming school production of The Girl with the Golden Hair. Showcasing unity across the school community, student captains, prefects, teachers, and the choir are investing long hours into rehearsals alongside a versatile dance ensemble combining styles from Bharatnatyam and Bhangra to Hip Hop and Ballet. Backed by teacher vocalists, tech crew coordination, and special music curated by Vice Principal Mr. Craig William Temple, the ambitious production serves as a centerpiece celebrating school pride, cross-grade camaraderie, and artistic collaboration.",
+        "content": "<p>The lead article of this issue of The FAPS Chronicles (October Week 3, 2026), titled &quot;Preparations All the Way,&quot; highlights the campus-wide excitement and dedicated efforts underway for the upcoming school production of The Girl with the Golden Hair. Showcasing unity across the school community, student captains, prefects, teachers, and the choir are investing long hours into rehearsals alongside a versatile dance ensemble combining styles from Bharatnatyam and Bhangra to Hip Hop and Ballet. Backed by teacher vocalists, tech crew coordination, and special music curated by Vice Principal Mr. Craig William Temple, the ambitious production serves as a centerpiece celebrating school pride, cross-grade camaraderie, and artistic collaboration.</p>"
+      }
+    ],
+    "pdfUrl": "pdfs/mvds2jt8-FAPS_CHRONICLES_-_IV.pdf",
+    "pdfFilename": "FAPS_CHRONICLES_-_IV.pdf",
+    "image": "covers/mvds2nhz-cover.jpg"
+  },
+  {
     "id": "ed-mvdrsu4f",
     "volume": "October 19th, 2026",
     "title": "Poll - Oct W3",
@@ -37,7 +64,7 @@
   },
   {
     "id": "ed-mvdqu3f3",
-    "volume": "October 19, 2026  - deleted",
+    "volume": "October 19, 2026",
     "title": "October Week 3",
     "date": "OCTOBER 18, 2026",
     "category": "issues",
@@ -185,8 +212,8 @@
   },
   {
     "id": "ed-mulez7fu",
-    "volume": "VOL. LIX",
-    "title": "Vote for the Student's Voice topic in the next edition of The FAPS Chronicles",
+    "volume": "September 28th, 2026",
+    "title": "Sep W4",
     "date": "SEPTEMBER 28, 2026",
     "category": "polls",
     "categoryLabel": "CAMPUS POLL",
@@ -215,6 +242,8 @@
     ],
     "articles": [],
     "image": "covers/mulez7ga-cover.png",
-    "closed": true
+    "closed": true,
+    "pdfUrl": null,
+    "pdfFilename": null
   }
 ]
