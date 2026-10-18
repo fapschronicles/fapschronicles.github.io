@@ -9,7 +9,7 @@
     "status": "published",
     "readTime": "1 min vote",
     "featured": false,
-    "subtitle": "",
+    "subtitle": "Get a chance to vote or the next Student's Voice topic!",
     "type": "poll",
     "question": "What should the next Student's Voice topic be?",
     "options": [
@@ -30,7 +30,9 @@
       }
     ],
     "articles": [],
-    "image": "covers/mulez7ga-cover.png"
+    "image": "covers/mulez7ga-cover.png",
+    "pdfUrl": null,
+    "pdfFilename": null
   },
   {
     "id": "ed-mvdqu3f3",
