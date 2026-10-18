@@ -184,8 +184,8 @@
   },
   {
     "id": "ed-mulez7fu",
-    "volume": "VOL. LIX",
-    "title": "Vote for the Student's Voice topic in the next edition of The FAPS Chronicles",
+    "volume": "September 28th, 2026",
+    "title": "Sep W4",
     "date": "SEPTEMBER 28, 2026",
     "category": "polls",
     "categoryLabel": "CAMPUS POLL",
@@ -214,6 +214,8 @@
     ],
     "articles": [],
     "image": "covers/mulez7ga-cover.png",
-    "closed": true
+    "closed": true,
+    "pdfUrl": null,
+    "pdfFilename": null
   }
 ]
