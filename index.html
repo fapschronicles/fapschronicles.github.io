@@ -6,7 +6,7 @@
   <title>The FAPS Chronicles | The Frank Anthony Public School, Bengaluru</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/lucide@0.263.1/dist/umd/lucide.min.js"></script>
+  <script src="https://unpkg.com/lucide@0.263.0/dist/umd/lucide.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/dompurify/3.0.8/purify.min.js"></script>
 
@@ -144,11 +144,69 @@
       body { background: white !important; color: black !important; }
       .print-shadow-none { box-shadow: none !important; border: none !important; }
     }
+
+    /* ==================== Site themes ==================== */
+    /* Halloween decorations live in the existing palette (gold/cream/brown)
+       — no color changes, just little crafted touches. */
+    .theme-decor { display: none; }
+    html[data-theme="halloween"] .theme-decor { display: block; }
+
+    .spider-swing { transform-origin: 50% 0; animation: faps-swing 4.5s ease-in-out infinite; }
+    @keyframes faps-swing {
+      0%, 100% { transform: rotate(-7deg); }
+      50% { transform: rotate(7deg); }
+    }
+
+    .bat-drift-a { animation: faps-drift 36s ease-in-out infinite; }
+    .bat-drift-b { animation: faps-drift 27s ease-in-out infinite reverse; }
+    @keyframes faps-drift {
+      0%, 100% { transform: translate(0, 0); }
+      50% { transform: translate(26px, -16px); }
+    }
+
+    .pumpkin-face { animation: faps-flicker 3.4s ease-in-out infinite; }
+    @keyframes faps-flicker {
+      0%, 100% { opacity: 1; }
+      40% { opacity: 0.78; }
+      55% { opacity: 0.96; }
+      70% { opacity: 0.82; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .spider-swing, .bat-drift-a, .bat-drift-b, .pumpkin-face { animation: none; }
+    }
   </style>
 </head>
 <body class="min-h-screen flex flex-col bg-paper-50 text-cream-200 transition-colors duration-200">
 
-  <div class="no-print bg-paper-900 text-cream-300 text-xs py-2 px-4 sm:px-8 border-b border-paper-300/40 flex flex-wrap justify-between items-center gap-2 font-sans">
+  <script>
+    /* Restore the visitor's saved site theme before first paint. */
+    (function () {
+      try {
+        if (localStorage.getItem('faps-theme') === 'halloween') {
+          document.documentElement.setAttribute('data-theme', 'halloween');
+          window.siteTheme = 'halloween';
+        }
+      } catch (e) {}
+    })();
+  </script>
+
+  <div class="no-print relative bg-paper-900 text-cream-300 text-xs py-2 px-4 sm:px-8 border-b border-paper-300/40 flex flex-wrap justify-between items-center gap-2 font-sans">
+    <div class="theme-decor pointer-events-none absolute right-8 sm:right-16 top-full z-[45] text-faps-gold opacity-90" aria-hidden="true">
+      <svg class="spider-swing" width="34" height="62" viewBox="0 0 34 62" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+        <line x1="17" y1="0" x2="17" y2="21"/>
+        <circle cx="17" cy="26" r="5"/>
+        <ellipse cx="17" cy="43" rx="7.5" ry="10"/>
+        <path d="M13 24 Q6 19 3 12"/>
+        <path d="M12.6 27 Q4 25 1 20"/>
+        <path d="M12.4 31 Q4 33 1.5 39"/>
+        <path d="M13 35 Q7 41 5.6 49"/>
+        <path d="M21 24 Q28 19 31 12"/>
+        <path d="M21.4 27 Q30 25 33 20"/>
+        <path d="M21.6 31 Q30 33 32.5 39"/>
+        <path d="M21 35 Q27 41 28.4 49"/>
+      </svg>
+    </div>
     <div class="flex items-center space-x-4">
       <span class="flex items-center gap-1.5 text-faps-gold font-medium">
         <i data-lucide="map-pin" class="w-3.5 h-3.5"></i> 13, Cambridge Road, Bengaluru - 560008
@@ -158,6 +216,31 @@
     </div>
     <div class="flex items-center space-x-4 text-xs">
       <span class="italic text-cream-300 font-serif hidden lg:inline">Motto: "Courage is Destiny"</span>
+      <div id="theme-menu-wrap" class="relative">
+        <button id="theme-menu-btn" onclick="toggleThemeMenu(event)" aria-haspopup="true" aria-expanded="false" class="text-faps-gold hover:text-cream-100 font-medium transition-colors bg-paper-100 px-3 py-1 rounded border border-faps-gold/30">
+          <span>Themes</span>
+        </button>
+        <div id="theme-menu" class="hidden absolute right-0 top-[calc(100%+10px)] z-50 w-64 bg-paper-50 border border-paper-300/60 rounded-xl shadow-2xl p-2 font-sans" role="menu" aria-label="Site theme">
+          <p class="px-2.5 pt-1 pb-1.5 text-[10px] font-mono uppercase tracking-[0.2em] text-cream-400">Site theme</p>
+          <button onclick="setSiteTheme('default', true); closeThemeMenu()" data-theme-opt="default" role="menuitemradio" aria-checked="true" class="w-full text-left px-2.5 py-2 rounded-lg hover:bg-paper-200/60 transition-colors flex items-center gap-3">
+            <span class="w-8 h-8 rounded-md bg-paper-100 border border-paper-300/50 flex items-center justify-center text-faps-gold shrink-0"><i data-lucide="newspaper" class="w-4 h-4"></i></span>
+            <span class="flex-1 min-w-0">
+              <span class="block text-xs font-semibold text-cream-100">1 — Default</span>
+              <span class="block text-[10px] font-mono text-cream-400 mt-0.5">The classic Chronicle</span>
+            </span>
+            <i data-lucide="check" class="theme-check w-4 h-4 text-faps-gold hidden shrink-0"></i>
+          </button>
+          <button onclick="setSiteTheme('halloween', true); closeThemeMenu()" data-theme-opt="halloween" role="menuitemradio" aria-checked="false" class="w-full text-left px-2.5 py-2 rounded-lg hover:bg-paper-200/60 transition-colors flex items-center gap-3">
+            <span class="w-8 h-8 rounded-md bg-paper-100 border border-paper-300/50 flex items-center justify-center text-faps-gold shrink-0"><i data-lucide="ghost" class="w-4 h-4"></i></span>
+            <span class="flex-1 min-w-0">
+              <span class="block text-xs font-semibold text-cream-100">2 — Halloween</span>
+              <span class="block text-[10px] font-mono text-cream-400 mt-0.5">Bats, webs &amp; a hanging spider</span>
+            </span>
+            <i data-lucide="check" class="theme-check w-4 h-4 text-faps-gold hidden shrink-0"></i>
+          </button>
+        </div>
+      </div>
+
       <button onclick="openAdminModal()" class="text-faps-gold hover:text-cream-100 font-medium transition-colors bg-paper-100 px-3 py-1 rounded border border-faps-gold/30">
         <span id="admin-status-text">Editor Portal</span>
       </button>
@@ -168,7 +251,39 @@
     </div>
   </div>
 
-  <header class="border-b border-paper-300/30 bg-paper-50/95 backdrop-blur sticky top-0 z-40 no-print py-4 px-4 sm:px-8">
+  <header class="relative border-b border-paper-300/30 bg-paper-50/95 backdrop-blur sticky top-0 z-40 no-print py-4 px-4 sm:px-8">
+    <div class="theme-decor pointer-events-none absolute inset-0 z-[1] overflow-hidden text-faps-gold" aria-hidden="true">
+      <svg class="absolute top-0 left-0 opacity-[0.16]" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M0 0 L64 13 M0 0 L45 45 M0 0 L13 64"/>
+        <path d="M16 0 A16 16 0 0 1 0 16 M32 0 A32 32 0 0 1 0 32 M48 0 A48 48 0 0 1 0 48"/>
+      </svg>
+      <svg class="absolute top-0 right-0 -scale-x-100 opacity-[0.16]" width="64" height="64" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1">
+        <path d="M0 0 L64 13 M0 0 L45 45 M0 0 L13 64"/>
+        <path d="M16 0 A16 16 0 0 1 0 16 M32 0 A32 32 0 0 1 0 32 M48 0 A48 48 0 0 1 0 48"/>
+      </svg>
+      <div class="absolute bottom-0 right-4 sm:right-40 flex items-end gap-2">
+        <svg class="w-12 h-auto sm:w-14" viewBox="0 0 46 38" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M23 7 C23 3.5 24.5 2.5 26.5 2 C27.5 3.8 27.5 6 27 7.6"/>
+          <path d="M23 7.5 C14 7.5 6.5 13 6.5 21 C6.5 30 14 36 23 36 C32 36 39.5 30 39.5 21 C39.5 13 32 7.5 23 7.5 Z"/>
+          <path d="M23 7.5 C19 13 19 30 23 36 M23 7.5 C27 13 27 30 23 36"/>
+          <path d="M13 10.5 C9.5 15.5 9.5 26.5 13.5 32.5 M33 10.5 C36.5 15.5 36.5 26.5 32.5 32.5"/>
+          <g class="pumpkin-face">
+            <path d="M14.5 23 L18.5 16.5 L21 23.5 Z M31.5 23 L27.5 16.5 L25 23.5 Z" fill="currentColor" stroke="none"/>
+            <path d="M14 28 L16.5 31 L19.5 28.5 L23 32 L26.5 28.5 L29.5 31 L32 28 Z" fill="currentColor" stroke="none"/>
+          </g>
+        </svg>
+        <svg class="hidden lg:block w-9 h-auto" viewBox="0 0 46 38" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M23 7 C23 3.5 24.5 2.5 26.5 2 C27.5 3.8 27.5 6 27 7.6"/>
+          <path d="M23 7.5 C14 7.5 6.5 13 6.5 21 C6.5 30 14 36 23 36 C32 36 39.5 30 39.5 21 C39.5 13 32 7.5 23 7.5 Z"/>
+          <path d="M23 7.5 C19 13 19 30 23 36 M23 7.5 C27 13 27 30 23 36"/>
+          <path d="M13 10.5 C9.5 15.5 9.5 26.5 13.5 32.5 M33 10.5 C36.5 15.5 36.5 26.5 32.5 32.5"/>
+          <g class="pumpkin-face">
+            <path d="M14.5 23 L18.5 16.5 L21 23.5 Z M31.5 23 L27.5 16.5 L25 23.5 Z" fill="currentColor" stroke="none"/>
+            <path d="M14 28 L16.5 31 L19.5 28.5 L23 32 L26.5 28.5 L29.5 31 L32 28 Z" fill="currentColor" stroke="none"/>
+          </g>
+        </svg>
+      </div>
+    </div>
     <div class="max-w-6xl mx-auto flex items-center justify-between">
       <div class="flex items-center space-x-3 cursor-pointer" onclick="showIndexView()">
         <img src="logo.png" alt="The Frank Anthony Public School crest" class="w-12 h-12 rounded-full object-contain shadow-inner">
@@ -186,7 +301,43 @@
 
   <main id="view-index" class="view-transition flex-1 max-w-6xl w-full mx-auto px-4 sm:px-8 py-8 sm:py-12">
 
-    <section class="mb-8 sm:mb-12 border-b border-paper-300/30 pb-6 sm:pb-10">
+    <section class="relative mb-8 sm:mb-12 border-b border-paper-300/30 pb-6 sm:pb-10">
+      <div class="theme-decor pointer-events-none absolute inset-0 z-[1] overflow-hidden text-faps-gold" aria-hidden="true">
+        <svg class="bat-drift-a absolute top-[24%] left-[52%] opacity-[0.55]" width="34" height="16" viewBox="0 0 32 15.5" fill="currentColor" aria-hidden="true">
+          <path d="M16 1.8
+C15.2 1.8 14.6 2.3 14.4 3.1
+C11.4 2 7.8 2.3 5 3.7
+L1.4 2.3
+C2.2 5.6 2.8 8.3 2.4 11.2
+L6.2 9.2 L7.8 12.4 L10.4 9.8 L12.2 13 L14.4 10.6
+C15 11.8 15.5 12.8 16 13.3
+C16.5 12.8 17 11.8 17.6 10.6
+L19.8 13 L21.6 9.8 L24.2 12.4 L25.8 9.2
+L29.6 11.2
+C29.2 8.3 29.8 5.6 30.6 2.3
+L26.9 3.7
+C24 2.3 20.6 2 17.6 3.1
+C17.4 2.3 16.8 1.8 16 1.8
+Z"/>
+        </svg>
+        <svg class="bat-drift-b absolute top-[46%] right-[8%] opacity-40" width="24" height="12" viewBox="0 0 32 15.5" fill="currentColor" aria-hidden="true">
+          <path d="M16 1.8
+C15.2 1.8 14.6 2.3 14.4 3.1
+C11.4 2 7.8 2.3 5 3.7
+L1.4 2.3
+C2.2 5.6 2.8 8.3 2.4 11.2
+L6.2 9.2 L7.8 12.4 L10.4 9.8 L12.2 13 L14.4 10.6
+C15 11.8 15.5 12.8 16 13.3
+C16.5 12.8 17 11.8 17.6 10.6
+L19.8 13 L21.6 9.8 L24.2 12.4 L25.8 9.2
+L29.6 11.2
+C29.2 8.3 29.8 5.6 30.6 2.3
+L26.9 3.7
+C24 2.3 20.6 2 17.6 3.1
+C17.4 2.3 16.8 1.8 16 1.8
+Z"/>
+        </svg>
+      </div>
       <div id="admin-preview-banner" class="hidden mb-6 p-3 rounded-lg bg-faps-gold/10 border border-faps-gold/30 text-faps-gold text-xs flex items-center justify-between font-sans">
         <div class="flex items-center gap-2">
           <i data-lucide="shield-alert" class="w-4 h-4 text-faps-gold"></i>
@@ -197,7 +348,7 @@
 
       <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-paper-100 border border-faps-gold/30 text-faps-gold text-xs font-medium mb-4">
         <span class="w-2 h-2 rounded-full bg-faps-gold animate-pulse"></span>
-        <span>The Weekly Journal Archive</span>
+        <span id="archive-badge-label">The Weekly Journal Archive</span>
       </div>
 
       <h2 class="font-serif text-3xl sm:text-5xl font-medium tracking-tight text-cream-100 max-w-3xl leading-tight">
@@ -230,7 +381,7 @@
 
     <section>
       <div class="flex items-center justify-between pb-4 mb-6 border-b border-paper-300/30">
-        <h3 class="font-serif text-xl font-semibold text-cream-100 tracking-wide">
+        <h3 id="all-editions-heading" class="font-serif text-xl font-semibold text-cream-100 tracking-wide">
           All Editions
         </h3>
         <span id="issue-count-label" class="text-xs font-mono text-cream-400">Loading editions...</span>
@@ -918,7 +1069,7 @@
         return true;
       });
 
-      countLabel.textContent = filtered.length + ' edition' + (filtered.length === 1 ? '' : 's') + ' found';
+      countLabel.textContent = filtered.length + ' edition' + (filtered.length === 1 ? '' : 's') + (window.siteTheme === 'halloween' ? ' unearthed' : ' found');
 
       const featured = filtered.find(i => i.featured) || filtered[0];
 
@@ -978,8 +1129,8 @@
       if (gridItems.length === 0) {
         grid.innerHTML = `
           <div class="col-span-full py-12 text-center bg-paper-100/40 rounded-xl border border-paper-300/30">
-            <i data-lucide="newspaper" class="w-8 h-8 mx-auto text-cream-400 mb-2"></i>
-            <p class="text-sm text-cream-300">No issues found matching your selection.</p>
+            <i data-lucide="${window.siteTheme === 'halloween' ? 'ghost' : 'newspaper'}" class="w-8 h-8 mx-auto text-cream-400 mb-2"></i>
+            <p class="text-sm text-cream-300">${window.siteTheme === 'halloween' ? 'No issues found haunting the archive.' : 'No issues found matching your selection.'}</p>
           </div>
         `;
       } else {
@@ -1049,6 +1200,79 @@
     };
 
     window.handleSearch = function () { renderIndexView(); };
+
+    /* ==================== Site themes (1 Default / 2 Halloween) ==================== */
+    window.siteTheme = window.siteTheme === 'halloween' ? 'halloween' : 'default';
+
+    window.updateThemeCopy = function () {
+      const hw = window.siteTheme === 'halloween';
+      const badge = document.getElementById('archive-badge-label');
+      if (badge) badge.textContent = hw ? "The All Hallows' Journal Archive" : 'The Weekly Journal Archive';
+      const head = document.getElementById('all-editions-heading');
+      if (head) head.textContent = hw ? "All Hallows' Editions" : 'All Editions';
+      const si = document.getElementById('index-search-input');
+      if (si) si.placeholder = hw ? 'Search the haunted archive...' : 'Search articles or issues...';
+      const cl = document.getElementById('issue-count-label');
+      if (cl) {
+        const t = cl.textContent;
+        if (t === 'Loading editions...' || t === 'Summoning editions...') {
+          cl.textContent = hw ? 'Summoning editions...' : 'Loading editions...';
+        }
+      }
+    };
+
+    window.setSiteTheme = function (theme, rerender) {
+      window.siteTheme = theme === 'halloween' ? 'halloween' : 'default';
+      try { localStorage.setItem('faps-theme', window.siteTheme); } catch (e) {}
+      if (window.siteTheme === 'halloween') {
+        document.documentElement.setAttribute('data-theme', 'halloween');
+      } else {
+        document.documentElement.removeAttribute('data-theme');
+      }
+      window.updateThemeCopy();
+      document.querySelectorAll('#theme-menu [data-theme-opt]').forEach(function (btn) {
+        const on = btn.getAttribute('data-theme-opt') === window.siteTheme;
+        const chk = btn.querySelector('.theme-check');
+        if (chk) chk.classList.toggle('hidden', !on);
+        btn.classList.toggle('bg-paper-100', on);
+        btn.setAttribute('aria-checked', on ? 'true' : 'false');
+      });
+      if (rerender && typeof renderIndexView === 'function') renderIndexView();
+    };
+
+    window.toggleThemeMenu = function (ev) {
+      if (ev) ev.stopPropagation();
+      const m = document.getElementById('theme-menu');
+      const b = document.getElementById('theme-menu-btn');
+      if (!m || !b) return;
+      const willOpen = m.classList.contains('hidden');
+      m.classList.toggle('hidden', !willOpen);
+      b.setAttribute('aria-expanded', willOpen ? 'true' : 'false');
+    };
+
+    window.closeThemeMenu = function () {
+      const m = document.getElementById('theme-menu');
+      const b = document.getElementById('theme-menu-btn');
+      if (m && !m.classList.contains('hidden')) {
+        m.classList.add('hidden');
+        if (b) b.setAttribute('aria-expanded', 'false');
+      }
+    };
+
+    document.addEventListener('click', function (e) {
+      const wrap = document.getElementById('theme-menu-wrap');
+      if (wrap && !wrap.contains(e.target)) window.closeThemeMenu();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') window.closeThemeMenu();
+    });
+
+    // Apply the saved theme on load (decor attribute was set pre-paint).
+    (function () {
+      let saved = 'default';
+      try { if (localStorage.getItem('faps-theme') === 'halloween') saved = 'halloween'; } catch (e) {}
+      window.setSiteTheme(saved, false);
+    })();
 
     window.showIndexView = function () {
       window.activeIssueId = null;
