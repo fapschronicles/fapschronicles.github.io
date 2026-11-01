@@ -1,5 +1,32 @@
 [
   {
+    "id": "ed-mvy2t2n5",
+    "volume": "Vol 5",
+    "title": "October Week 4",
+    "date": "NOVEMBER 1, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "",
+    "articles": [
+      {
+        "id": "art-ed-mvy2t2n5",
+        "category": "ISSUE",
+        "title": "October Week 4",
+        "author": "By Editorial Staff",
+        "date": "NOVEMBER 1, 2026",
+        "image": "",
+        "excerpt": "",
+        "content": "<p></p>"
+      }
+    ],
+    "pdfUrl": "pdfs/mvy2t2o1-FAPS_CHRONICLES_-_V.pdf",
+    "pdfFilename": "FAPS_CHRONICLES_-_V.pdf",
+    "image": "covers/mvy2t7d7-cover.jpg"
+  },
+  {
     "id": "ed-mvds2jt7",
     "volume": "October 19, 2026",
     "title": "October Week 3",
