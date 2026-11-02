@@ -1,5 +1,38 @@
 [
   {
+    "id": "ed-mvzcrrfo",
+    "volume": "October 31st, 2026",
+    "title": "Poll - Oct W4",
+    "date": "NOVEMBER 2, 2026",
+    "category": "polls",
+    "categoryLabel": "CAMPUS POLL",
+    "status": "published",
+    "readTime": "1 min vote",
+    "featured": false,
+    "subtitle": "",
+    "type": "poll",
+    "question": "What should the next Student's Voice be about?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Science Labs - the School's Well Kept Mysteries",
+        "votes": 0
+      },
+      {
+        "id": "opt-2",
+        "text": "Should Blackboards be Replaced with Whiteboards?",
+        "votes": 0
+      },
+      {
+        "id": "opt-3",
+        "text": "Ballon D'Or - the Biggest Sports Controversy of the Year",
+        "votes": 0
+      }
+    ],
+    "articles": [],
+    "image": ""
+  },
+  {
     "id": "ed-mvy2wiy0",
     "volume": "Vol 6",
     "title": "October Week 4",
@@ -12,7 +45,7 @@
     "subtitle": "",
     "articles": [
       {
-        "id": "art-ed-mvy2wiy0",
+        "id": "art-0",
         "category": "ISSUE",
         "title": "October Week 4",
         "author": "By Editorial Staff",
@@ -24,7 +57,8 @@
     ],
     "pdfUrl": "pdfs/mvy2wiyr-FAPS_CHRONICLES_-_V.pdf",
     "pdfFilename": "FAPS_CHRONICLES_-_V.pdf",
-    "image": "covers/mvy2wn3v-cover.jpg"
+    "image": "covers/mvy2wn3v-cover.jpg",
+    "closed": false
   },
   {
     "id": "ed-mvds2jt7",
