@@ -1,5 +1,32 @@
 [
   {
+    "id": "ed-mw9fgjlz",
+    "volume": "November 8, 2026",
+    "title": "November Week 1",
+    "date": "NOVEMBER 9, 2026",
+    "category": "issues",
+    "categoryLabel": "ISSUE",
+    "status": "published",
+    "readTime": "3 min read",
+    "featured": false,
+    "subtitle": "Read the latest news, covering Expressions, interviews by students and teachers alike, global news on sports and science, riddles, puzzles, and much more!",
+    "articles": [
+      {
+        "id": "art-ed-mw9fgjlz",
+        "category": "ISSUE",
+        "title": "November Week 1",
+        "author": "By Editorial Staff",
+        "date": "NOVEMBER 9, 2026",
+        "image": "",
+        "excerpt": "Read the latest news, covering Expressions, interviews by students and teachers alike, global news on sports and science, riddles, puzzles, and much more!",
+        "content": "<p>Read the latest news, covering Expressions, interviews by students and teachers alike, global news on sports and science, riddles, puzzles, and much more!</p>"
+      }
+    ],
+    "pdfUrl": "pdfs/mw9fgjnu-FAPS_CHRONICLES_-_VI.pdf",
+    "pdfFilename": "FAPS_CHRONICLES_-_VI.pdf",
+    "image": "covers/mw9fht4y-cover.jpg"
+  },
+  {
     "id": "ed-mw9b6pu6",
     "volume": "November 9th, 2026",
     "title": "Poll - Nov W1",
@@ -32,7 +59,8 @@
     "articles": [],
     "image": "covers/mulez7ga-cover.png",
     "pdfUrl": null,
-    "pdfFilename": null
+    "pdfFilename": null,
+    "closed": false
   },
   {
     "id": "ed-mvzcrrfo",
