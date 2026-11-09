@@ -1,5 +1,38 @@
 [
   {
+    "id": "ed-mw9b6pu6",
+    "volume": "November 9th, 2026",
+    "title": "Poll - Nov W1",
+    "date": "NOVEMBER 9, 2026",
+    "category": "polls",
+    "categoryLabel": "CAMPUS POLL",
+    "status": "published",
+    "readTime": "1 min vote",
+    "featured": false,
+    "subtitle": "",
+    "type": "poll",
+    "question": "What should the next Student's Voice be about?",
+    "options": [
+      {
+        "id": "opt-1",
+        "text": "Should Blackboards be Replaced with Whiteboards?",
+        "votes": 0
+      },
+      {
+        "id": "opt-2",
+        "text": "Ballon D'Or - the Biggest Sports Controversy of the Year",
+        "votes": 0
+      },
+      {
+        "id": "opt-3",
+        "text": "Should the school prioritize its own website over the new \"Campus Care 10x\"?",
+        "votes": 0
+      }
+    ],
+    "articles": [],
+    "image": ""
+  },
+  {
     "id": "ed-mvzcrrfo",
     "volume": "October 31st, 2026",
     "title": "Poll - Oct W4",
